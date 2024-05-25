@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@org/dashboard": ["libs/dashboard/src/index.ts"],
+      "@org/header": ["libs/header/src/index.ts"],
+      "@org/home": ["libs/home/src/index.ts"],
+      "@org/sidenav": ["libs/sidenav/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
