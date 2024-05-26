@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -7,7 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 @Component({
   selector: 'lib-header',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatIconModule, MatMenuModule],
+  imports: [CommonModule, MatToolbarModule, MatIconModule, MatMenuModule, NgOptimizedImage],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
