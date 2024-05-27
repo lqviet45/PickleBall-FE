@@ -12,7 +12,7 @@ export const appConfig: ApplicationConfig = {
       withEnabledBlockingInitialNavigation(),
       withComponentInputBinding()
     ),
+    provideHttpClient(),
     provideAnimationsAsync(),
-    provideHttpClient(), provideAnimationsAsync(),
   ],
 };

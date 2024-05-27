@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -13,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     MatIconModule,
     RouterLink,
     RouterLinkActive,
+    NgOptimizedImage,
   ],
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
