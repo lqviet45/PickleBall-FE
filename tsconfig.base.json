@@ -18,6 +18,7 @@
       "@org/dashboard": ["libs/dashboard/src/index.ts"],
       "@org/header": ["libs/header/src/index.ts"],
       "@org/home": ["libs/home/src/index.ts"],
+      "@org/home-page": ["libs/guest/home-page/src/index.ts"],
       "@org/sidenav": ["libs/sidenav/src/index.ts"]
     }
   },

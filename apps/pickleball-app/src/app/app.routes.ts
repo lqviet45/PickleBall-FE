@@ -11,8 +11,7 @@ export const appRoutes: Route[] = [
     loadComponent: () => import('@org/home').then((m) => m.HomeComponent),
   },
   {
-    path: 'dashboard',
-    loadComponent: () =>
-      import('@org/dashboard').then((m) => m.DashboardComponent),
+    path: 'guest',
+    loadComponent: () => import('@org/home-page').then((m) => m.HomePageComponent),
   },
 ];
