@@ -14,4 +14,9 @@ export const appRoutes: Route[] = [
     path: 'guest',
     loadComponent: () => import('@org/home-page').then((m) => m.HomePageComponent),
   },
+  {
+    path: 'owner',
+    loadComponent: () =>
+      import('@org/owner').then((m) => m.OwnerComponent),
+  },
 ];
