@@ -15,4 +15,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@org/dashboard').then((m) => m.DashboardComponent),
   },
+  {
+    path: 'owner',
+    loadComponent: () =>
+      import('@org/owner').then((m) => m.OwnerComponent),
+  },
 ];
