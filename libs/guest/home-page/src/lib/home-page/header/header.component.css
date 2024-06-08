@@ -1,0 +1,77 @@
+.secondary-header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-button {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.login-button {
+  margin-left: auto;
+  color: black;
+
+}
+.logo-button mat-icon {
+  margin-right: 8px;
+}
+
+.nav-items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.nav-items button {
+  color: black;
+  margin-top: 30px;
+}
+
+.nav-items button.active {
+  color: #ADE603; /* Change text color to yellow for active button */
+}
+.carousel-nav-button {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  font-size: 12px; /* Adjust the font size as needed */
+  padding: 5px; /* Adjust the padding as needed */
+}
+
+/* Adjust the icon size inside the button if necessary */
+.carousel-nav-button mat-icon {
+  font-size: 16px; /* Adjust the icon size as needed */
+}
+::ng-deep .ngx-mat-carousel button {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  font-size: 12px; /* Adjust the font size as needed */
+  padding: 5px; /* Adjust the padding as needed */
+}
+
+::ng-deep .ngx-mat-carousel button mat-icon {
+  font-size: 16px; /* Adjust the icon size as needed */
+}
+.toolbar-section {
+  flex: 1; /* Each section will take up equal space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-section {
+  justify-content: flex-start;
+}
+.login-section {
+  flex: 1; /* Each section will take up equal space */
+}
+.login-button {
+  color: black;
+  border: 2px solid; /* Button border color */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-right: 20px;
+}
