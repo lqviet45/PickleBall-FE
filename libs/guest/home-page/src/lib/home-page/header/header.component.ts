@@ -3,7 +3,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'lib-header',
@@ -15,8 +15,18 @@ import { RouterLink } from '@angular/router';
 export class HeaderComponent {
   activeButton = '';
 
+  constructor(private router: Router) {}
+
   setActiveButton(button: string) {
     this.activeButton = button;
+    this.scrollToSection(button);
+  }
+  scrollToSection(sectionId: string) {
+    this.router.navigate([], { fragment: sectionId });
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
   onLogin() {
     // Logic for login button click

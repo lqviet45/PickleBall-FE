@@ -1,0 +1,59 @@
+/* news.component.css */
+.container{
+  margin-bottom: 1em;
+}
+.news-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #08222F;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-auto-rows: auto; /* Automatically adjust row height */
+  gap: 10px; /* Adjust the gap between columns */
+  position: relative; /* Position the container relatively */
+  width: 100%; /* Set the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.news-item {
+  margin-top: 0.5em;
+  position: relative; /* Position the items relatively */
+  display: flex;
+  flex-direction: column; /* Stack image and title vertically */
+  height: 100%; /* Ensure all items have same height */
+  width: 100%; /* Set the width of each news item */
+}
+
+.news-item img {
+  width: 100%; /* Adjust image width to fill container */
+  border-radius: 8px;
+}
+
+.title {
+  position: absolute; /* Position the title absolutely */
+  bottom: 0; /* Position at the bottom of the container */
+  left: 0; /* Align to the left */
+  width: 100%; /* Take full width of container */
+  padding: 10px; /* Add padding for better readability */
+  color: #ffffff; /* White text color */
+  border-bottom-left-radius: 8px; /* Rounded corners */
+  border-bottom-right-radius: 8px; /* Rounded corners */
+  margin: 0; /* Remove any default margin */
+  font-size: 1.5em;
+}
+
+/* Set height and grid layout for the first news item */
+.news-item:first-child {
+  height: auto; /* Set the height to auto to match the content height */
+  grid-row: span 2; /* Each item spans across two rows */
+}
+.news-item img:first-child {
+  height: 210%;
+}

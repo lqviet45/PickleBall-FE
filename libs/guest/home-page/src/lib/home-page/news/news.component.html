@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="news-title">Tin Tức</h1>
+  <div class="news-list">
+    <div *ngFor="let news of newsList" class="news-item">
+      <img [src]="news.imgUrl" alt="News Image">
+      <h3 class="title">{{ news.title }}</h3>
+    </div>
+  </div>
+</div>

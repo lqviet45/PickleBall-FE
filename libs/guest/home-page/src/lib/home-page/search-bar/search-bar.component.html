@@ -1,23 +1,27 @@
 <div class="search-bar">
-  <input matInput placeholder="Nhập tên sân" [(ngModel)]="searchQuery">
+  <input class="search-input" matInput placeholder="Nhập tên sân" [(ngModel)]="searchQuery">
 
   <mat-form-field>
-    <mat-select placeholder="Tỉnh/Thành" [(value)]="selectedOption1">
-      <mat-option *ngFor="let option of options1" [value]="option">{{ option }}</mat-option>
+    <mat-select placeholder="Tỉnh/Thành" [(value)]="selectedCity">
+      <input matInput placeholder="">
+      <mat-option *ngFor="let option of city" [value]="option">{{ option }}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field>
-    <mat-select placeholder="Số người chơi" [(value)]="selectedOption2">
-      <mat-option *ngFor="let option of options2" [value]="option">{{ option }}</mat-option>
+    <mat-select placeholder="Số người chơi" [(value)]="selectedNop">
+      <input matInput placeholder="">
+      <mat-option *ngFor="let option of nop" [value]="option">{{ option }}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field>
-    <input  placeholder="Select Date">
-
+    <input matInput type="date">
+    <span class="calendar-icon">
+      <i class="far fa-calendar-alt"></i>
+    </span>
   </mat-form-field>
 
-  <button class="btn-search">Tìm kiếm</button>
+  <button (click)="onSearch()" class="btn-search">Tìm kiếm</button>
 </div>
 

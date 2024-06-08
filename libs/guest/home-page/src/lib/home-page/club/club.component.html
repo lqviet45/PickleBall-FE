@@ -1,0 +1,22 @@
+<div class="club">
+  <h1 class="club-title">Câu Lạc Bộ</h1>
+  <div class="club-list-container">
+    <div class="pagination-buttons">
+      <button *ngIf="currentPage > 1" mat-icon-button color="primary" (click)="previousPage()">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+    </div>
+    <div class="club-card" *ngFor="let club of clubsToShow">
+      <h3>{{ club.name }}</h3>
+      <p>{{ club.description }}</p>
+      <div class="btn-join-section">
+        <button class="btn-join">Tham gia</button>
+      </div>
+    </div>
+    <div class="pagination-buttons">
+      <button *ngIf="clubsToShow.length === clubsPerPage" mat-icon-button color="primary" (click)="nextPage()">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
