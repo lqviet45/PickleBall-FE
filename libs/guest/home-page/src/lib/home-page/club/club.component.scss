@@ -1,6 +1,6 @@
 .club{
   background: #08222F;
-  height: 35vh;
+  height: 45vh;
   padding-top: 1em;
 }
 .club-title{
@@ -15,20 +15,20 @@
 .club-list-container {
   display: flex;
   overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 20px;
+  padding: 15px;
   justify-content: center;
   align-items: center;
 }
 
 .club-card {
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
-  min-width: 300px; /* Adjust the width of each club card */
-  margin-right: 2.5em; /* Adjust the spacing between cards */
-  margin-top: 1em;
+  min-width: 20vw; /* Adjust the width of each club card */
+  margin-top: 0.5em;
+  margin-right: 0.5em;
 }
 
 .pagination-buttons {

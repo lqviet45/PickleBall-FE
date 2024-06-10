@@ -3,7 +3,7 @@ import { Route } from '@angular/router';
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'guest',
     pathMatch: 'full',
   },
   {
@@ -18,5 +18,10 @@ export const appRoutes: Route[] = [
     path: 'owner',
     loadComponent: () =>
       import('@org/owner').then((m) => m.OwnerComponent),
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('@org/login').then((m) => m.LoginComponent),
   },
 ];

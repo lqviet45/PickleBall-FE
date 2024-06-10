@@ -30,6 +30,6 @@ export class HeaderComponent {
   }
   onLogin() {
     // Logic for login button click
-    console.log('Login button clicked');
+    this.router.navigate(['login']);
   }
 }
